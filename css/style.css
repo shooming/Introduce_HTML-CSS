@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+*{font-family:'Sunflower', sans-serif;}
+/*전제페이지 공통속성*/
+body .mainwrap{
+  height: 100%;
+}
+
+/*페이지 헤더부분 시작*/
+header{
+  height:150px;
+}
+
+header a.homeimg{
+  display:block;
+  width:50px;
+  height:50px;
+  position: absolute;
+  content: url(../image/smarthome.png);
+}
+
+header h1::after{
+  position: relative;
+  top: 10px;
+  left:60px;
+  content:"자기소개?"
+}
+header nav ul{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 25px 0 25px 0;
+  background-color: skyblue;
+}
+
+header nav ul li{
+   list-style: none;
+   display: inline;
+   border-left: 1px solid gray;
+   padding:25px 50px 25px 50px;
+}
+
+header nav ul li:first-child{
+  border-left:none;
+}
+header nav ul li:hover{
+  border-radius: 10px;
+  background-color: powderblue;
+  transition: all 1s;
+}
+
+header nav ul a{
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size:1.2rem;
+}
+
+header nav li a{
+  text-decoration: none;
+}
+/*페이지 헤더부분 끝*/
+.flcon{
+  display:flex;
+  flex-direction: row;
+  border: 1px solid gray;
+}
+
+.flcon main{
+  border-right:1px solid gray;
+}
+
+.flcon aside{
+  flex-basis: 1600px;
+}
+
+/*메인 페이지부분 시작*/
+.fomain{
+  border: 1px solid gray;
+}
+
+.fomain form p input{
+  border: 0px solid gray;
+  background-color:skyblue;
+  border-radius: 2px;
+}
+
+#subu{
+  position: relative;
+  left: 45%;
+  margin: 20px; 0 20px 0;
+}
+
+#restt{
+  position: relative;
+  left: 50%;
+}
+/*메인 페이지부분 끝*/
+
+/*푸터부분 시작*/
+footer{
+  position: relative;
+  top:20px;
+  height: 50px;
+  padding:20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+footer > a{
+  display:inline-block;
+  position: absolute;
+  width:32px;
+  height:32px;
+}
+
+footer a.blog{
+  position: absolute;
+  background-image: url(../image/blog.png);
+  background-repeat: no-repeat;
+  left: 40%;
+}
+
+footer a.mail{
+  background-image: url(../image/mail.png);
+  background-repeat: no-repeat;
+  left: 60%;
+}
+/*푸터부분 끝*/

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>메인인줄 알았지만 form 연습페이지였던것</title>
+    <meta name="descripton" content="연습용 자기소개 페이지입니다."/>
+    <meta name="keyword" content="HTML, CSS, 자기소개서"/>
+    <meta name="viewport" content="width=device-width, initial=1.0"/>
+    <meta name="author" content="shoo"/>
+
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet"/>
+
+  <body class="mainwrap">
+    <header class="headerwrap">
+      <a href="main.html" class="homeimg" alt="홈아이콘" title="홈으로 돌아가기"></a>
+      <h1></h1>
+        <nav>
+          <ul>
+            <a href="form.html"><li>메인</li></a>
+            <a href="media.html"><li>블로그</li></a>
+            <a href="#"><li>기타</li></a>
+          </ul>
+        </nav>
+      </header>
+      <main class="fomain">
+        <form class="" action="index.html" method="post">
+          <p><label>당신의 이름은? :<input type="text" name="name" placeholder="이름 입력해 주세요" autofocus></label></p>
+          <p><label>당신의 나이? <input type="number" name="age" placeholder="나이" min="0" max="100"></label></p>
+          <p><label>이메일 주소 : <input type="email" name="eamil" value="" placeholder=""></label></p>
+          <p><label>이메일 주소 : <input type="text" name="eamil2"></label> @
+          <select name="mailporvider">
+            <option value="naver.com">naver.com</option>
+            <option value="daum.net">daum.net</option>
+            <option value="nate.com">nate.com</option>
+            <option value="gamil.com">gamil.com</option>
+          </select></p>
+          <p><label>패스워드 : <input type="password" name="pwd" placeholder="비밀번호 입력" autocomplete="off"></label></p>
+          <p><label>생년월일 : <input type="date" name="birth"></label></p>
+          <p><label>전화번호 : <input type="tel" name="tell" value=""></label></p>
+          <p>그냥 만든 슬라이더 : <input type="range" name="range" value="5" min="0" max="10"></p>
+          <p><label>자신 소개 : <textarea name="" rows="1" cols="10"></textarea></label></p>
+          <input type="submit" id="subu" name="제출">
+          <input type="reset" id="restt" name="초기화">
+        </form>
+      </main>
+
+      <footer>
+        <a href="https://shooming.github.io" class="blog
+        " alt="블로그 바로가기" title="블로구~"></a>
+        <a href="http://www.google.com/gmail/" class="mail" alt="이메일 보내기" title="메이루~"></a>
+      </footer>
+  </body>
+</html>
